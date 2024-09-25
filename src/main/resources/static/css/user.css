@@ -1,0 +1,840 @@
+
+input::placeholder{text-indent: 6px;} /* 텍스트 들여쓰기 */
+
+main {margin-top: 65px;margin-bottom: 65px;}
+main > section {
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+}
+main > section > form {
+    position: absolute;
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 165px;
+    top: 16px;
+    padding: 1px 0 0 0;
+}
+main > section > form > h1 {
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    top: 1px;
+    width: 75.2px;
+    height: 14px;
+    top: 1px;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+    white-space: nowrap; /* 한 줄에 텍스트를 표시 */
+    overflow: visible; /* 텍스트가 잘리지 않도록 설정 */
+}
+main > section > form > table {
+    position: absolute;
+    position: relative;
+    width: 600px;
+    height: 142px;
+    top: 23px;
+    padding: 1px 0.5px 0.5px 0.5px;
+    border-width: 2px 0 0 0;
+    border-top: 2px solid #111111;
+    border-collapse: collapse;
+}
+main > section > form > table > tbody {
+    position: relative;
+    position: absolute;
+    width: 599px;
+    height: 140.5px;
+    top: 1px;
+    left: 0.5px;
+}
+
+/* 로그인 */
+.login {
+    position: relative;
+    width: 360px;
+    height: auto;
+    border: 1px solid #cfded8;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+.login > form {}
+.login table {
+    margin-left: 52px;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.login table tr {}
+.login table tr > td {}
+.login table img {width: 20px;}
+.login table input {
+    width: 162px;
+    height: 22px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+    border: 1px solid #e4eaec;
+    background-color: #f7f7f7;
+}
+.login .btnLogin {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 60px;
+    height: 52px;
+    background-color: #fdfdfd;
+    border: 1px solid #bebebe;
+}
+.login > div {
+    width: 100%;
+    height: 104px;
+    background: #f5f6fa;
+    border-top: 1px solid #cfded8;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.login > div > p {margin: 10px 0;}
+.login > div > a {float: right;}
+.login > div > a:after{content :' | ';}
+.join_mem:after{display: none;}
+.login > div >a:first-child:after{content :'';}
+/* 회원가입 */
+.register {
+    width: 600px;
+    height: auto;
+    margin: 60px auto;
+    overflow: hidden;
+}
+.register table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #111;
+    margin-bottom: 10px;
+}
+.register table caption {
+    text-align: left;
+    padding: 10px 0;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.register table tr > td {
+    padding: 6px 12px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+.register table tr > td:nth-child(1) {
+    width: 105px;
+    background: #f5f8f9;
+}
+.register table tr .nickInfo {margin-bottom: 6px;}
+.register table input {
+    width: 162px;
+    height: 22px;
+    border: 1px solid #e4eaec;
+    background: #f7f7f7;
+    text-indent: 6px;
+}
+.register table input[name=addr1] {display: block;width: 360px;margin: 4px 0;}
+.register table input[name=addr2] {display: block;width: 360px;}
+.register table button {border: none;vertical-align: bottom;}
+.register > form > div {float: right;}
+
+/* 약관 */
+.terms {
+    width: 600px;
+    height: auto;
+    margin: 60px auto;
+}
+.terms > table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #111;
+}
+.terms > table > caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.terms > table tr {}
+.terms > table td {
+    padding: 6px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+.terms > table td > textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    background: #f7f7f7;
+    border: 1px solid #e4eaec;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.terms > table td > label {float: right;}
+.terms > table td > label > input[type=checkbox] {}
+.terms > table p {float: right;}
+.terms > div {float: right;margin-top: 10px;}
+.findpass .tit{
+    width:600px;
+    border-bottom:2px solid #111;
+    padding-bottom: 8px;
+}
+.findpass .tit::after{display: block;content: "";clear: both;}
+.findpass > form > h1 {
+    display: inline-block;
+    width: 75.2px;
+    height: 14px;
+    line-height: 14.52px;
+    text-align: left;
+    color: #ff0;
+    white-space: nowrap; /* 한 줄에 텍스트를 표시 */
+    overflow: visible; /* 텍스트가 잘리지 않도록 설정 */
+
+}
+/* 안 먹는 style css */
+.findpass  > form > table {
+    width: 600px;
+    height: 138px;
+    border-top: 2px solid #111111;
+    /* border-collapse: collapse; */
+}
+.findpass .password{
+    width: 600px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid #e9e9e9;
+    border-collapse: collapse;
+}
+.findpass .input_id{border-right: 1px solid #E9E9E9;}
+.findpass  > form > table > tbody {height: 136.5px;}
+.password{
+    width: 600px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid #e9e9e9;
+    border-collapse: collapse;
+}
+.input_id{
+    border-right: 1px solid #E9E9E9;
+}
+main > section > form > table > tbody {
+    height: 136.5px;
+}
+.password > tbody > tr:nth-child(1) > th {
+    width: 120px;
+    height: 49.5px;
+    padding: 0 71.3px 0 12.5px;
+}
+.password > tbody > tr:nth-child(1) > th > label {
+    width: 36.2px;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+}
+.password > tbody > tr:nth-child(1) > td {width: 479px;height: 49.5px;}
+.password > tbody > tr:nth-child(1) > td > input {
+    width: 164px;
+    height: 24px;
+    margin-left: 12.5px;
+    padding: 3.5px 1px 3.5px 1px;
+    background: #F7F7F7;
+    border: 1px solid #E4EAEC;
+}
+.password > tbody > tr:nth-child(2) > th {
+    width: 120px;
+    height: 87px;
+    padding: 0 71.3px 0 12.5px;
+    border: 1px solid #E9E9E9;
+}
+.password > tbody > tr:nth-child(2) > th > label {
+    width: 36.2px;
+    height: 14px;
+    top: 36px;
+    left: 12.5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+}
+.password > tbody > tr:nth-child(2) > td {
+    width: 479px;
+    height: 87px;
+    border-width: 1px 0 0 0;
+    border: 1px solid #E9E9E9;
+    position: relative;
+}
+.password > tbody > tr:nth-child(2) > td > div {
+    display: block;
+}
+.password > tbody > tr:nth-child(2) > td > div:nth-of-type(1) > input {
+    width: 164px;
+    height: 24px;
+    margin-left:12.5px;
+    margin-bottom:7px;
+    padding: 3.5px 1px 3.5px 1px;
+    border-width: 1px 0 0 0;
+    background: #F7F7F7;
+    border: 1px solid #E4EAEC;
+
+}
+.password > tbody > tr:nth-child(2) > td .auth-button {
+    width: 85px;
+    height: 27px;
+    border-width: 1px 0 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    background: #EFEFEF;
+    border: 1px solid #BEBEBE;
+
+}
+.password > tbody > tr:nth-child(2) > td .auth-button > span {
+    text-align: center;
+    width: 75.2px;
+    height: 14px;
+    line-height: 14.52px;
+
+}
+.password > tbody > tr:nth-child(2) > td > div:nth-of-type(2) > input {
+    width: 164px;
+    height: 24px;
+    margin-left:12.5px;
+    padding: 3.5px 1px 3.5px 1px;
+    border-width: 1px 0 0 0;
+    background: #F7F7F7;
+    border: 1px solid #E4EAEC;
+}
+.password > tbody > tr:nth-child(2) > td .ok-button {
+    width: 34px;
+    height: 27px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    background: #EFEFEF;
+    border: 1px solid #BEBEBE;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    color: #000000;
+}
+.password > tbody > tr:nth-child(2) > td .ok-button > span {
+    text-align: center;
+    width: 24.2px;
+    height: 14px;
+    top: 6px;
+    left: 5px;
+}
+.passwordchange > tbody > tr:nth-child(1) > th {
+    position: relative;
+    width: 120px;
+    height: 42.5px;
+    padding: 0 71.3px 0 12.5px;
+    border-width: 1px 0 0 0;
+    border: 1px solid #E9E9E9;
+}
+.passwordchange > tbody > tr:nth-child(1) > th > label {
+    position: absolute;
+    width: 36.2px;
+    height: 14px;
+    top: 14px;
+    left: 12.5px;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+}
+.passwordchange > tbody > tr:nth-child(1) > td {
+    width: 63.58px;
+    height: 14px;
+    top: 14px;
+    left: 12.5px;
+    gap: 0;
+    opacity: 0;
+    font-size: 10.13px;
+    font-weight: 700;
+    line-height: 12.25px;
+    text-align: left;
+    padding-left: 12.5px;
+    border: 1px solid #E9E9E9;
+}
+
+/* --- */
+.passwordchange > tbody > tr:nth-child(2) > th {
+    position: relative;
+    width: 120px;
+    height: 49px;
+    padding: 0 71.3px 0 12.5px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    opacity: 0;
+    border: 1px solid #E9E9E9;
+}
+.passwordchange > tbody > tr:nth-child(2) > th > label {
+    position: absolute;
+    width: 65px;
+    height: 14px;
+    top: 17px;
+    left: 12.5px;
+    gap: 0;
+    opacity: 0;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+}
+.passwordchange > tbody > tr:nth-child(2) > td {
+    width: 479px;
+    height: 49px;
+    left: 120px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    opacity: 0;
+    border: 1px solid #E9E9E9;
+}
+.passwordchange > tbody > tr:nth-child(2) > td > input {
+    width: 164px;
+    height: 24px;
+    top: 13px;
+    margin-left: 12.5px;
+    padding: 3.5px 1px 3.5px 1px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    opacity: 0;
+    background: #F7F7F7;
+    border: 1px solid #E4EAEC;
+
+}
+.passwordchange > tbody > tr:nth-child(3) > th {
+    position: relative;
+    width: 120px;
+    height: 49px;
+    padding: 0 71.3px 0 12.5px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    opacity: 0;
+    border: 1px solid #E9E9E9;
+}
+.passwordchange > tbody > tr:nth-child(3) > th > label {
+    position: absolute;
+    width: 93px;
+    height: 14px;
+    top: 17px;
+    left: 12.5px;
+    opacity: 0;
+    line-height: 14.52px;
+    text-align: left;
+    color: #000000;
+}
+.passwordchange > tbody > tr:nth-child(3) > td {
+    width: 479px;
+    height: 49px;
+    left: 120px;
+    gap: 0;
+    border-width: 1px 0 0 0;
+    opacity: 0;
+    border: 1px solid #E9E9E9;
+}
+.passwordchange > tbody > tr:nth-child(3) > td > input {
+    width: 164px;
+    height: 24px;
+    top: 13px;
+    margin-left: 12.5px;
+    padding: 3.5px 1px 3.5px 1px;
+    border-width: 1px 0 0 0;
+    background: #F7F7F7;
+    border: 1px solid #E4EAEC;
+}
+
+
+
+.findid {
+    margin: 0 auto;
+    width: 600px;
+    height: 286px;
+    margin-top: 65px;
+    padding-top: 16px;
+    padding-bottom: 20px
+}
+.findid form{
+    width: 600px;
+    height: 286px;
+    box-sizing: border-box;
+}
+.findid section{height: 161px;}
+.findid .headtxt {
+    text-align: left;
+    font-size:12px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #222121;
+}
+.findid .headtxt > span  {
+    width: 63.2px;
+    height: 14px;
+    box-sizing: border-box;
+}
+.findid table {
+    width: 600px;
+    height: 138px;
+    border-collapse: collapse;
+}
+.findid td {padding: 10px; border: 1px solid #ccc;}
+.findid tr{width: auto;}
+.findid tr:nth-child(2) td:nth-child(2){
+    padding-top: 18px;
+    padding-left:12.42px;
+    padding-bottom: 14px;
+}
+.findid tr:nth-child(1){height: 49px;}
+.findid tr:nth-child(2){height: 87px;}
+.findid table td:nth-child(1){width: 120px; box-sizing: border-box;}
+.findid table td:nth-child(2){width: auto; box-sizing: border-box;}
+.findid table td:nth-child(3){width: 120px; box-sizing: border-box;}
+.findid input {
+    width: 164px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid #E4EAEC;
+    line-height: 24px;
+    background: #F7F7F7;
+}
+.findid input#code {margin-bottom: 1px;}
+.findid button {
+    border: 1px solid #BEBEBE;
+    height: 27px;
+    background-color: #EFEFEF;
+}
+.findid .form_group{height: 27px; box-sizing: border-box;}
+.findid .form_group > div > *{
+    box-sizing: border-box;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+.findid .form_group:nth-child(1){margin-bottom: 4px;}
+.findid .btnSendEmail{
+    box-sizing: border-box;
+    width: 85px;
+    font-size: 12px;
+    line-height : 26.5px;
+    text-align: center;
+}
+.findid .btnAuthEmail{
+    box-sizing: border-box;
+    width: 34px;
+    height: 27px;
+    text-align: center;
+    align-items: center;
+    line-height : 26.5px;
+    font-size: 12px;
+}
+.findid .findnote {
+    text-align: left;
+    width: auto;
+    height: 40px;
+    white-space: nowrap;
+}
+.findid .findnote > p{
+    box-sizing: border-box;
+    font-size:12px;
+    font-weight: 400;
+    color: #555;
+    margin-top: 18px;
+    line-height: 20px;
+    width: 456.2px;
+    max-width: max-content;
+}
+.findid .btns {text-align: right; margin-top: 32px;}
+.findid .btns > button{
+    border: 1px solid #BEBEBE;
+    background-color: #FFFFFF;
+}
+.findid .btns >.btn_cancel{
+    width: 42px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    margin: 0 1px 0 0;
+
+}
+.findid .btns >.btn_next{
+    width: 42px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+}
+
+
+
+.findidresult {
+    width: 600px;
+    height: 286px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.findidresult .top_txt {border-bottom: 2px solid #222121; padding-bottom: 8px;}
+.findidresult form{
+    width: 600px;
+    height: 286px;
+    box-sizing: border-box;
+    margin-top:14px
+}
+.findidresult .top_txt > span{
+    padding-top: 14px;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+}
+.findidresult table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 170px;
+}
+.findidresult td {padding: 2px 10px; border: 1px solid #ccc;}
+.findidresult tr{box-sizing: border-box; height: 42.5px;}
+.findidresult .note {
+    font-size:12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #555;
+    margin-top: 5px;
+
+}
+.findidresult .btns {
+    text-align: right;
+    position: relative;
+    margin-top: 30px;
+}
+.findidresult .btns > a{
+    border: 1px solid #BEBEBE;
+    background-color: #FFFFFF;
+}
+.findidresult .btns > .btn1{
+    width: 75px;
+    height: 35px;
+    margin-right: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.findidresult .btns >.btn2{
+    width: 75px;
+    height: 35px;
+    margin-right: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.infotable .form span {
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.infotable input{
+    width: 162px;
+    height: 24px;
+    text-indent: 6px;
+}
+.infotable table tr:nth-of-type(1){ border-top: 2px solid #E9E9E9;}
+.infotable {
+    width: 600px;
+    height: 578px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.infotable .form{height: 507px;box-sizing: border-box;}
+.infotable table > tr {box-sizing: border-box;}
+.infotable table, th, td {
+    box-sizing: border-box;
+    border-left: 1px solid #E9E9E9;
+    border-right:1px solid #E9E9E9;;
+    border-bottom: 1px solid #E9E9E9;;
+}
+.infotable table, th{line-height: 14.52px;}
+.infotable .form_group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:0;
+}
+.infotable .form_group > .address{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+}
+.infotable #input-nickname {flex: 1; margin-right: 8px;}
+.infotable .form table {width: 100%;border-collapse: collapse;}
+.infotable .form table:nth-of-type(1){box-sizing: border-box;height: 139px;}
+.infotable .form table:nth-of-type(2){box-sizing: border-box;height: 306px;}
+.infotable .form th, .form td{padding-left: 12.5px;}
+.infotable .form td {
+    box-sizing: border-box;
+    padding-left: 12.5px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    line-height: 14px;
+}
+.infotable .form th{
+    text-align: left;
+    width: 105px;
+    background-color: #F5F8F9;
+}
+.infotable table:nth-child(2){box-sizing: border-box;}
+.infotable .form input {
+    background: #F7F7F7;
+    border:1px solid #E4EAEC;
+    box-sizing: border-box;
+
+}
+.infotable .form span {line-height : 24px;}
+.infotable #zip {
+    width: 162px;
+    height: 24px;
+    box-sizing: border-box;
+
+}
+.infotable .input_address {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    width: 362px;
+}
+.infotable button{margin-left: 10px;}
+.infotable .btn_modifty{
+    width: 85px;
+    height: 27px;
+    border: 1px solid #E9E9E9;
+    background-color: #2E658A;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+.infotable .btn_modifty > p{color: #FFFFFF;}
+.infotable .form_group li{display: flex;flex-wrap: nowrap;align-items: center;}
+.infotable .form_group li:nth-child(1){margin-bottom: 8px;}
+.infotable .btn_duplicate {
+    flex-shrink: 0;
+    /* display: inline-flex; */
+    width: auto;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: center;
+    background-color: white; /* Ensure background color matches design */
+    height: 18px;
+}
+.infotable .btn_duplicate .icon {
+    margin-right: 0; /* Space between the icon and text */
+    width: 58px; /* Adjust the size as needed */
+    height: 18px;
+    left: 10px;
+}
+.infotable .btn_send{
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: center;
+    background-color: white;
+}
+.infotable .auth{margin-top:3px;}
+.infotable .btn_auth .icon {
+    margin-right: 0; /* Space between the icon and text */
+    width: 80px; /* Adjust the size as needed */
+    height: 18px;
+}
+.infotable .btnZip{
+    display: flex;
+    width: auto;
+    height: 18px;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+.infotable .btn_duplicate .icon {
+    margin-right: 0; /* Space between the icon and text */
+    width: 58px; /* Adjust the size as needed */
+    height: 18px;
+    left: 10px;
+}
+
+.infotable .btnZip .icon {
+    margin-right: 0; /* Space between the icon and text */
+    width: 80px; /* Adjust the size as needed */
+    height: 18px;
+    left: 10px;
+}
+.infotable .btn_quit{
+    width: 58px;
+    height: 27px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14.52px;
+    justify-content: center;
+    background-color: #ED2F2F;
+    margin: 0;
+}
+.infotable .btn_quit > p{color: #FFFFFF;}
+.infotable .address-input {
+    width: calc(100% - 12px); /* Adjust the width as needed */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.infotable .button_container {display: flex;justify-content: flex-end;margin-top: 20px;}
+.infotable .button_container button {padding: 8px 16px;margin-left: 10px;}
+.infotable .button_container .btn-cancel {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.infotable .button_container .btn_submit {
+    background-color: #ccc;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.infotable .button_container button:hover {opacity: 0.8;}

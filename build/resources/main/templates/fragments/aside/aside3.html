@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <aside class="aside">
+    <div class="sidebar">
+      <div class="aside_cate">
+        <img th:src="@{/img/sub_aside_cate3_tit.png}" alt="Croptalk 농작물이야기">
+      </div><!-- .aside_cate -->
+      <div class="aside_bg">
+        <ul class="cate3_lnb1">
+          <li><a th:href="@{/article/list(group='cr',cateNo=1)}" class="lnb1">농작물이야기</a></li>
+          <li><a th:href="@{/article/list(group='cr',cateNo=2)}" class="lnb2">텃밭가꾸기</a></li>
+          <li><a th:href="@{/article/list(group='cr',cateNo=3)}" class="lnb3">귀농학교</a></li>
+        </ul><!-- .cate_lnb -->
+      </div><!-- .aside_bg -->
+    </div><!-- .sidebar -->
+  </aside><!-- .aside -->
+
+  <nav class="nav">
+    <th:block th:if="${cate eq 1|| cate eq null}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate3_tit1.png}" alt="농작물이야기"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>농작물이야기 </span><strong>농작물이야기</strong>
+      </p>
+    </th:block>
+
+    <th:block th:if="${cate eq 2}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate3_tit2.png}" alt="텃밭가꾸기"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>농작물이야기 </span><strong>텃밭가꾸기</strong>
+      </p>
+    </th:block>
+
+    <th:block th:if="${cate eq 3}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate3_tit3.png}" alt="귀농학교"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>농작물이야기 </span><strong>귀농학교</strong>
+      </p>
+    </th:block>
+  </nav>
+
+
+</html>

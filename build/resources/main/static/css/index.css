@@ -1,0 +1,311 @@
+
+main .main-wrapper{
+    margin: 20px auto;
+    width: 980px;
+    display: flex;
+}
+
+main .index-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-slide {
+    width: 749px;
+    height: 200px;
+}
+
+main .popup {
+    width: 229px;
+    height: 200px;
+
+}
+
+main .index-main-box:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+    margin-left: 463px;
+}
+
+main .index-sub {
+    display: flex;
+    flex-wrap: wrap; /* 아이템이 줄을 넘어가면 다음 줄로 이동 */
+    gap: 11px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+main .index-product-box{
+    width: 150px; /* 각 아이템의 너비 */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    display: flex;
+        flex-direction: column;
+        align-items: center; /* 수평 가운데 정렬 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+main .price-row {
+    display: flex;
+    justify-content: center;
+    gap: 3px; /* 가격과 할인율 사이의 간격 */
+    margin: 3px 0;
+}
+
+
+main .index-product-box span{
+    display: block;
+    margin: 1px 0; /* 각 줄 사이에 여백 추가 */
+}
+
+main .product-type {
+    color: rgba(119, 119, 119, 1);
+    width: auto;
+    height: auto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+}
+
+main .product-name {
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+}
+
+main .product-price {
+    color: black;
+    width: 30px;
+    height: auto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: line-through;
+}
+
+main .product-discount {
+    color: red;
+    width: 30px;
+    height: auto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+}
+
+main .product-discount-price {
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 17px;
+    line-height: normal;
+    font-stretch: normal;
+    font-weight: bold;
+}
+
+main .index_main_box2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main_banner_box1 {
+    background-image: url(../img/main_banner_sub1_bg.jpg);
+    width: 490px;
+    height: 74px;
+    display: flex;
+    align-items: center; /* 이미지 수직 가운데 정렬 */
+}
+
+main .main_banner_box1 img,
+main .main_banner_box2 img {
+  top: 50%;
+  left: 50%;
+}
+
+main .main_banner_box2 {
+    background-image: url(../img/main_banner_sub2_bg.jpg);
+    width: 490px;
+    height: 74px;
+    display: flex;
+    align-items: center; /* 이미지 수직 가운데 정렬 */
+}
+
+main .index_main_box3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+main .extra_box1,
+main .extra_box2,
+main .extra_box3 {
+    width: 327px; /* 각 아이템의 너비 */
+    box-sizing: border-box;
+}
+
+main .index_sub_box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main .index_sub_box1,
+main .index_sub_box2,
+main .index_sub_box3 {
+    width: 111px; /* 각 아이템의 너비 */
+    box-sizing: border-box;
+    float: right;
+    text-align: left;
+}
+
+main .sub_text_box {
+    float: right;
+    width: 119px;
+    list-style-type: none;
+    line-height: 200%;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+main .sub_date {
+    float: right;
+    width: 78px;
+    list-style-type: none;
+    line-height: 200%;
+    font-size: 10px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+main .sub_date a {
+    display: block;
+    margin: 1px 0;
+}
+
+main .cs_wrapper {
+    width: 980px;
+    height: 124px;
+    margin: 0 auto; 
+}
+
+main .main-gubun-box {
+    width: 100%;
+    background-image: url(../img/main_cs_top_line.png);
+    height: 2px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    margin-top: 5px;
+}
+
+main .customer_cs {
+    width: 980px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .customer_cs_info {
+    width: 369px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+main .cs_name {
+    width: 367px;
+    height: 40px
+}
+
+main .cs_info {
+    width: 369px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .time {
+    width: 131px;
+    height: 45px;
+    font-size: 10px;
+    float: right;
+    margin-left: 18px;
+}
+
+main .cs_btn {
+    width: 486px;
+
+}
+
+main .account_info {
+    width: 264px;
+    height: 120px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+main .account_number {
+    width: 264px;
+    height: 200px;
+    box-sizing: border-box;
+    font-size: 10px;
+    padding: 0 15px;
+}
+
+main .notice {
+    width: 346px;
+    height: 120px;
+    box-sizing: border-box;
+    
+}
+
+main .notice_box {
+    width: 333px;
+    height: 106px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .notice_text_box {
+    width: 218px;
+    height: 140px;
+}
+
+main .notice_date {
+    width: 115px;
+    height: 66px;
+    text-align: right;
+}
+
+main .notice_text_box, .notice_date {
+    font-size: 10px;
+}
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block th:replace="~{fragments/config::configFragment}"></th:block>
+<body>
+<div id="wrap">
+    <th:block th:replace="~{fragments/header::header}"></th:block>
+
+    <main id="main" class="cf">
+        <section class="mainIn cf">
+            <th:block th:if="${article}">
+                <th:block th:if="${article.group == 'cr'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub3::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside3::aside}"></th:block>
+                </th:block>
+                <th:block th:if="${article.group == 'ev'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub4::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside4::aside}"></th:block>
+                </th:block>
+                <th:block th:if="${article.group == 'co'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub5::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside5::aside}"></th:block>
+                </th:block>
+            </th:block>
+            <th:block th:if="${group}">
+                <th:block th:if="${group == 'cr'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub3::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside3::aside}"></th:block>
+                </th:block>
+                <th:block th:if="${group == 'ev'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub4::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside4::aside}"></th:block>
+                </th:block>
+                <th:block th:if="${group == 'co'}">
+                    <th:block th:replace="~{fragments/sub_bg/sub5::div}"></th:block>
+                    <th:block th:replace="~{fragments/aside/aside5::aside}"></th:block>
+                </th:block>
+            </th:block>
+            <article class="article cart">
+                <div class="articleIn cf">
+                    <th:block th:if="${article}">
+                        <th:block th:if="${article.group == 'cr'}">
+                            <th:block th:replace="~{fragments/aside/aside3::nav}"></th:block>
+                        </th:block>
+                        <th:block th:if="${article.group == 'ev'}">
+                            <th:block th:replace="~{fragments/aside/aside4::nav}"></th:block>
+                        </th:block>
+                        <th:block th:if="${article.group == 'co'}">
+                            <th:block th:replace="~{fragments/aside/aside5::nav}"></th:block>
+                        </th:block>
+                    </th:block>
+                    <th:block th:if="${group}">
+                        <th:block th:if="${group == 'cr'}">
+                            <th:block th:replace="~{fragments/aside/aside3::nav}"></th:block>
+                        </th:block>
+                        <th:block th:if="${group == 'ev'}">
+                            <th:block th:replace="~{fragments/aside/aside4::nav}"></th:block>
+                        </th:block>
+                        <th:block th:if="${group == 'co'}">
+                            <th:block th:replace="~{fragments/aside/aside5::nav}"></th:block>
+                        </th:block>
+                    </th:block>
+                    <th:block layout:fragment="content" class="content"></th:block>
+                </div>
+            </article>
+        </section>
+    </main>
+    <th:block th:replace="~{fragments/footer::footer}"></th:block>
+</div>
+</body>
+<th:block layout:fragment="script"></th:block>
+</html>

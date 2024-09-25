@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="ko"
+          xmlns:th="http//www.thymeleaf.org"
+          xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+          layout:decorate="~{layouts/market}">
+
+        <th:block layout:fragment="content">
+            <article class="article cart">
+                <div class="articleIn cf">
+                    <nav>
+                        <h2><img th:src="@{/img/sub_nav_tit_cate2_tit1.png}" alt="장보기"></h2>
+                        <p class="location">
+                            <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+                            <span>HOME </span>
+                            <span>장보기 </span>
+                            <strong>장보기</strong>
+                        </p><!-- .location -->
+                    </nav>
+
+                    <h3 class="tb_tit">주문상품 전체</h3><!-- .tb_tit -->
+                    <table class="tb1">
+                        <colgroup>
+                            <col style="width: 10%">
+                            <col style="width: 12%">
+                            <col style="width: 28%">
+                            <col style="width: 10%">
+                            <col style="width: 10%">
+                            <col style="width: 10%">
+                            <col style="width: 10%">
+                            <col style="width: 10%">
+                        </colgroup>
+                        <tr>
+                            <th>이미지</th>
+                            <th>종류</th>
+                            <th>상품명</th>
+                            <th>수량</th>
+                            <th>할인</th>
+                            <th>포인트</th>
+                            <th>가격</th>
+                            <th>소계</th>
+                        </tr>
+<!--                        <c:forEach var="prodCartDto" items="${prodCartDto}">-->
+                            <tr>
+                                <td><img th:src="@{/img/market_item1.jpg}" alt="사과 샘플"/></td>
+                                <td>과일</td>
+                                <td>사과</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>100p</td>
+                                <td>10,000</td>
+                                <td><strong>10,000</strong>원</td>
+                            </tr>
+<!--                        </c:forEach>-->
+                    </table><!-- .tb1 -->
+
+                    <div class="order_final cf">
+                        <table class="tb2">
+                            <tr>
+                                <th colspan="2">전체합계</th>
+                            </tr>
+                            <tr>
+                                <td>상품수</td>
+                                <td>${service.totalQty(prodCartDto)}개</td>
+                            </tr>
+                            <tr>
+                                <td>상품금액</td>
+                                <td>${service.totalPrice(prodCartDto)}원</td>
+                            </tr>
+                            <tr>
+                                <td>할인금액</td>
+                                <td>${service.totalDiscount(prodCartDto)}원</td>
+                            </tr>
+                            <tr>
+                                <td>포인트 사용</td>
+                                <td id="pointUse">0p</td>
+                            </tr>
+                            <tr>
+                                <td>배송비</td>
+                                <td>${service.totalDelivery(prodCartDto)}원</td>
+                            </tr>
+                            <tr>
+                                <td>포인트 적립</td>
+                                <td>${service.totalPoint(prodCartDto)}p</td>
+                            </tr>
+                            <tr>
+                                <td>전체주문금액</td>
+                                <td>${service.realtotal(prodCartDto)}원</td>
+                            </tr>
+                        </table><!-- .tb2 -->
+                        <button class="btn_order"><a href="#">주문하기</a></button>
+
+                        <form id="formData">
+                            <input type="hidden" name="uid" value="${userDto.uid}" id="uid">
+                            <input type="hidden" name="recepit" value="" id="recepit">
+                            <input type="hidden" name="recHp" value="" id="recHp">
+                            <input type="hidden" name="recZip" value="" id="recZip">
+                            <input type="hidden" name="recAddr1" value="" id="recAddr1">
+                            <input type="hidden" name="recAddr2" value="" id="recAddr2">
+                            <input type="hidden" name="payment" value="" id="payment">
+                            <input type="hidden" name="orderDesc" value="" id="orderDesc">
+                        </form>
+
+                    </div><!-- .order_final -->
+
+                </div><!-- .articleIn -->
+            </article><!-- .article -->
+        </th:block>
+  </html>
+  

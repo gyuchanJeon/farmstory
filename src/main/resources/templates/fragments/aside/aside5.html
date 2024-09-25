@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <aside class="aside">
+    <div class="sidebar">
+      <div class="aside_cate">
+        <img th:src="@{/img/sub_aside_cate5_tit.png}" alt="커뮤니티">
+      </div><!-- .aside_cate -->
+      <div class="aside_bg">
+        <ul class="cate5_lnb">
+          <li><a th:href="@{/article/list(group='co',cateNo=1)}">공지사항</a></li>
+          <li><a th:href="@{/article/list(group='co',cateNo=2)}">오늘의식단</a></li>
+          <li><a th:href="@{/article/list(group='co',cateNo=3)}">나도요리사</a></li>
+          <li><a th:href="@{/article/list(group='co',cateNo=4)}">1:1고객문의</a></li>
+          <li><a th:href="@{/article/list(group='co',cateNo=5)}">자주묻는질문</a></li>
+        </ul><!-- .cate_lnb -->
+      </div><!-- .aside_bg -->
+    </div><!-- .sidebar -->
+  </aside><!-- .aside -->
+
+  <nav class="nav">
+    <th:block th:if="${cate eq 1|| cate eq null}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate5_tit1.png}" alt="공지사항"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>커뮤니티 </span><strong>공지사항</strong>
+      </p>
+    </th:block>
+    <th:block th:if="${cate eq 2}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate5_tit2.png}" alt="오늘의식단"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>커뮤니티 </span><strong>오늘의식단</strong>
+      </p>
+    </th:block>
+    <th:block th:if="${cate eq 3}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate5_tit3.png}" alt="나도요리사"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>커뮤니티 </span><strong>나도요리사</strong>
+      </p>
+    </th:block>
+    <th:block th:if="${cate eq 4}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate5_tit4.png}" alt="1:1고객문의"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>커뮤니티 </span><strong>1:1고객문의</strong>
+      </p>
+    </th:block>
+    <th:block th:if="${cate eq 5}">
+      <h2><img th:src="@{/img/sub_nav_tit_cate5_tit5.png}" alt="자주묻는질문"></h2>
+      <p class="location">
+        <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+        <span>HOME </span><span>커뮤니티 </span><strong>자주묻는질문</strong>
+      </p>
+    </th:block>
+  </nav>
+</html>

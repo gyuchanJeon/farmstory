@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block th:replace="~{fragments/config::configFragment}"></th:block>
+
+<link th:href="@{/css/market.css}" rel="stylesheet" layout:fragment="css"/>
+<body>
+<div id="wrap">
+    <th:block th:replace="~{fragments/header::header}"></th:block>
+
+    <main id="main" class="cf">
+        <section class="mainIn cf">
+
+
+            <th:block th:replace="~{fragments/sub_bg/sub2::div}"></th:block>
+            <th:block th:replace="~{fragments/aside/aside2::aside}"></th:block>
+
+            <th:block layout:fragment="content" class="content"></th:block>
+        </section>
+    </main>
+    <th:block th:replace="~{fragments/footer::footer}"></th:block>
+</div>
+</body>
+<th:block layout:fragment="script"></th:block>
+</html>

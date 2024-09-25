@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <aside class="aside">
+    <div class="sidebar">
+      <div class="aside_cate">
+        <img th:src="@{/img/sub_aside_cate4_tit.png}" alt="event">
+      </div><!-- .aside_cate -->
+      <div class="aside_bg">
+        <ul class="cate4_lnb1">
+          <li><a th:href="@{/article/list(group='ev',cateNo=1)}" class="lnb1">이벤트</a></li>
+        </ul><!-- .cate_lnb -->
+      </div><!-- .aside_bg -->
+    </div><!-- .sidebar -->
+  </aside><!-- .aside -->
+
+  <nav class="nav">
+    <h2>
+      <img th:src="@{/img/sub_nav_tit_cate4_tit1.png}" alt="이벤트">
+    </h2>
+    <p class="location">
+      <img th:src="@{/img/sub_page_nav_ico.gif}" alt="메뉴">
+      <span>HOME</span>
+      <span>이벤트</span>
+      <strong>이벤트</strong>
+    </p>
+  </nav>
+</html>

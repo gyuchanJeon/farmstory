@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http//www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/default}">
+
+    <th:block layout:fragment="css">
+        <link th:href="@{/css/index.css}" rel="stylesheet"></link>
+    </th:block>
+
+
+    <th:block layout:fragment="content">
+        <main id="main">
+            <th:block th:replace="~{fragments/sub_bg/main::section}"></th:block>
+            <section class="mainIn">
+                <div class="maintit">
+                    <img th:src="@{/img/main_market_tit.png}" alt="장보기 베스트 상품을 소개합니다.">
+                </div><!-- .maintit end -->
+                <section class="market">
+<!--                    <c:forEach var="product" items="${product}" varStatus="status">-->
+<!--                        <c:if test="${status.count <= 6}">-->
+                            <article>
+                                <a th:href="@{/market/view}">
+                                    <img th:src="@{/img/market_item1.jpg}" alt="과일 샘플 이미지">
+                                    <div class="mtxt">
+                                        <span>${product.prodCateName}</span>
+                                        <p class="prodname">${product.pName}</p>
+                                        <p>
+										  <span class="del">
+<!--										  	<fmt:formatNumber value="${product.price}" type="number" groupingUsed="true"/>-->
+										  </span>
+                                            <span class="discount">  ${product.discount}%↓</span>
+                                        </p>
+                                        <p class="price">
+                                            <strong>${service.disPrice(product)}원</strong>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+<!--                        </c:if>-->
+<!--                    </c:forEach>-->
+                </section><!-- .market section end-->
+
+                <section class="ad">
+                    <article class="ad1">
+                        <a th:href="@{/article/list(group='co',cateNo=2)}"><img th:src="@{/img/main_banner_sub1_tit.png}" alt="팜스토리 오늘의 식단"></a>
+                    </article>
+                    <article class="ad2">
+                        <a th:href="@{/article/list(group='co',cateNo=3)}"><img th:src="@{/img/main_banner_sub2_tit.png}" alt="팜스토리 나도 요리사"></a>
+                    </article>
+                </section> <!-- .ad end-->
+
+                <section class="crop">
+                    <article class="garden">
+                        <a th:href="@{/article/list(group='cr',cateNo=2)}"><img th:src="@{/img/main_latest1_tit.png}" alt="텃밭가꾸기"></a>
+                        <img th:src="@{/img/main_latest1_img.jpg}" alt="텃밭가꾸기">
+                        <table>
+<!--                            <c:choose>-->
+<!--                                <c:when test="${empty garden}">-->
+                                    <tr>
+                                        <td colspan="3">등록된 게시물이 없습니다.</td>
+                                    </tr>
+<!--                                </c:when>-->
+<!--                                <c:otherwise>-->
+<!--                                    <c:forEach var="garden" items="${garden}" varStatus="status">-->
+<!--                                        <c:if test="${status.count <= 5}">-->
+                                            <tr>
+                                                <th>></th>
+                                                <td>
+                                                    <a th:href="@{/article/list(group='cr',cateNo=2)}" class="ellipsis">
+                                                        ${garden.title}
+                                                    </a>
+                                                </td>
+                                                <td>${garden.b_rdate}</td>
+                                            </tr>
+<!--                                        </c:if>-->
+<!--                                    </c:forEach>-->
+<!--                                </c:otherwise>-->
+<!--                            </c:choose>-->
+                        </table>
+                    </article>
+                    <article class="returnfarm">
+                        <a th:href="@{/article/list(group='cr',cateNo=3)}"><img th:src="@{/img/main_latest2_tit.png}" alt="귀농학교"></a>
+                        <img th:src="@{/img/main_latest2_img.jpg}" alt="귀농학교">
+                        <table>
+<!--                            <c:choose>-->
+<!--                                <c:when test="${empty returnfarm}">-->
+                                    <tr>
+                                        <td colspan="3">등록된 게시물이 없습니다.</td>
+                                    </tr>
+<!--                                </c:when>-->
+<!--                                <c:otherwise>-->
+<!--                                    <c:forEach var="returnfarm" items="${returnfarm}" varStatus="status">-->
+<!--                                        <c:if test="${status.count <= 5}">-->
+                                            <tr>
+                                                <th>></th>
+                                                <td>
+                                                    <a th:href="@{/article/list(group='cr',cateNo=3)}" class="ellipsis">
+                                                        ${returnfarm.title}
+                                                    </a>
+                                                </td>
+                                                <td>${returnfarm.b_rdate}</td>
+                                            </tr>
+<!--                                        </c:if>-->
+<!--                                    </c:forEach>-->
+<!--                                </c:otherwise>-->
+<!--                            </c:choose>-->
+                        </table>
+                    </article>
+
+                    <article class="croptalk">
+                        <a th:href="@{/article/list(group='cr',cateNo=1)}"><img th:src="@{/img/main_latest3_tit.png}" alt="농작물이야기"></a>
+                        <img th:src="@{/img/main_latest3_img.jpg}" alt="농작물 이야기">
+                        <input type="hidden" name="b_cateNo" value="$ {cate}"/>
+                        <input type="hidden" name="group" value="$ {group}"/>
+                        <table>
+<!--                            <c:choose>-->
+<!--                                <c:when test="${empty croptalk}">-->
+                                    <tr>
+                                        <td colspan="3">등록된 게시물이 없습니다.</td>
+                                    </tr>
+<!--                                </c:when>-->
+<!--                                <c:otherwise>-->
+<!--                                    <c:forEach var="croptalk" items="${croptalk}" varStatus="status">-->
+<!--                                        <c:if test="${status.count <= 5}">-->
+                                            <tr>
+                                                <th>></th>
+                                                <td>
+                                                    <a th:href="@{/article/list(group='cr',cateNo=1)}" class="ellipsis">
+                                                        ${croptalk.title}
+                                                    </a>
+                                                </td>
+                                                <td>${croptalk.b_rdate}</td>
+                                            </tr>
+<!--                                        </c:if>-->
+<!--                                    </c:forEach>-->
+<!--                                </c:otherwise>-->
+<!--                            </c:choose>-->
+                        </table>
+                    </article>
+
+                </section>
+                <section class="notice">
+                    <article class="cs">
+                        <div class="ntitle">
+                            <img th:src="@{/img/main_sub2_cs_tit.png}" alt="고객센터안내">
+                        </div>
+                        <div class="cstxt">
+                            <img th:src="@{/img/main_sub2_cs_img.png}" alt="전화기">
+
+                            <img th:src="@{/img/main_sub2_cs_txt.png}" alt="고객센터 전화번호 1666-777">
+
+                            <p class="cs_time">
+                                평일: AM 09:00 ~ PM 06:00<br>
+                                점심: PM 12:00 ~ PM 01:00<br>
+                                토, 일요일, 공휴일 휴무<br>
+                            </p>
+                        </div>
+                        <div class="cslink">
+                            <a th:href="@{/article/list(group='co',cateNo=4)}"><img th:src="@{/img/main_sub2_cs_bt1.png}" alt="1:1고객문의"></a>
+                            <a th:href="@{/article/list(group='co',cateNo=5)}"><img th:src="@{/img/main_sub2_cs_bt2.png}" alt="자주묻는 질문"></a>
+                            <a href="#"><img th:src="@{/img/main_sub2_cs_bt3.png}" alt="배송 조회"></a>
+                        </div>
+
+                    </article>
+                    <article class="account">
+                        <div class="ntitle">
+                            <img th:src="@{/img/main_sub2_account_tit.png}" alt="계좌안내">
+                        </div>
+                        <div class="accounttxt">
+                            <p>
+                                기업은행 123-456789-01-01-012<br>
+                                국민은행 01-1234-56789<br>
+                                우리은행 123-456789-01-01-012<br>
+                                하나은행 123-456789-01-01<br>
+                                예 금 주 (주)팜스토리
+                            </p>
+                        </div>
+
+                    </article>
+                    <article class="announcement">
+                        <div class="ntitle">
+                            <img th:src="@{/img/main_sub2_notice_tit.png}" alt="공지사항">
+                        </div>
+                        <div class="ntable">
+                            <table class="ntable">
+<!--                                <c:forEach var="notice" items="${notice}" varStatus="status">-->
+<!--                                    <c:if test="${status.count <= 5}">-->
+                                        <tr>
+                                            <th>·</th>
+                                            <td><a th:href="@{/article/list(group='co',cateNo=1)}" class="ellipsis_notice">${notice.title}</a></td>
+                                            <td>${notice.b_rdate}</td>
+                                        </tr>
+<!--                                    </c:if>-->
+<!--                                </c:forEach>-->
+                            </table>
+                        </div>
+                    </article>
+
+                </section><!--.notice end-->
+
+            </section><!--.mainin end-->
+        </main ><!-- #main -->
+    </th:block>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{layouts/article}">
+<th:block layout:fragment="content">
+	<div class="main">
+		<section class="articlelist">
+			<article>
+				<table border="0">
+					<tr>
+						<th>No</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>등록일</th>
+						<th>조회수</th>
+					</tr>
+					<!--						<c:forEach var="article" items="${articles}">-->
+					<tr th:each="article : ${articles}">
+						<td>[[${article.no}]]</td>
+						<td>
+							<a th:href="@{/article/view(no=1)}">[[${article.title}]]</a>
+							[[${article.com}]]
+						</td>
+						<td>[[${article.writer}]]</td>
+						<td>[[${article.rdate}]]</td>
+						<td>[[${article.hit}]]</td>
+					</tr>
+					<!--						</c:forEach>-->
+				</table>
+			</article>
+
+			<!-- 페이지 네비게이션 -->
+			<div class="paging">
+				<!--					<c:if test="${pageGroup.start > 1}">-->
+				<a href="?pg=${pageGroup.start-1}" class="prev">이전</a>
+				</c:if>
+				<!--					<c:forEach var="i" begin="${pageGroup.start}" end="${pageGroup.end}">-->
+				<!--						<c:if test="${i<=lastPageNum}">-->
+				<a href="?pg=${i}" class="num ${i == currentPage?'current':''}">${i}</a>
+				<!--						</c:if>-->
+				<!--					</c:forEach>-->
+				<!--					<c:if test="${pageGroup.end < lastPageNum}">-->
+				<a href="?pg=${pageGroup.end+1}" class="next">다음</a>
+				<!--					</c:if>-->
+			</div>
+
+			<!-- 글쓰기 버튼 -->
+			<a th:href="@{/article/write(group=${group},cate=${cate})}" class="btnWrite">글쓰기</a>
+		</section>
+	</div><!-- #main -->
+</th:block>
+</html>
